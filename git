@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone from GitHub') {
             steps {
-                git url: 'https://github.com/Anusha-90/Git-Jenkins-Docker-K8s.git', branch: 'main'
+                echo "Cloning repo..."
             }
         }
 
