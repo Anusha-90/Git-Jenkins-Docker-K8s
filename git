@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone from GitHub') {
-            steps {
-                echo "Cloning repo..."
-            }
-        }
-
         stage('Run Script') {
             steps {
                 sh 'echo "Hello calling from Jenkins!"'
